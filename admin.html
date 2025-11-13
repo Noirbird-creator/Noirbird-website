@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noirbird Admin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Noirbird Admin Panel</h1>
+<section>
+  <h2>Add Product</h2>
+  <form id="addProductForm">
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="text" name="description" placeholder="Description" />
+    <input type="number" name="price" placeholder="Price" required />
+    <input type="text" name="category" placeholder="Category" />
+    <input type="text" name="images" placeholder="Image URLs (comma-separated)" />
+    <button type="submit">Add Product</button>
+  </form>
+</section>
+<section>
+  <h2>All Products</h2>
+  <div id="productsList"></div>
+</section>
+<script src="js/admin.js"></script>
+</body>
+</html>
